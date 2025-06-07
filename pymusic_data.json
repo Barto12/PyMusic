@@ -1,0 +1,68 @@
+{
+  "catalogo": [
+    {
+      "id": "C001",
+      "titulo": "Blinding Lights",
+      "artista": "The Weeknd",
+      "genero": "Pop",
+      "duracion": "03:20",
+      "reproducciones": 15,
+      "likes": 10,
+      "dislikes": 1
+    },
+    {
+      "id": "C002",
+      "titulo": "Bohemian Rhapsody",
+      "artista": "Queen",
+      "genero": "Rock",
+      "duracion": "05:55",
+      "reproducciones": 20,
+      "likes": 25,
+      "dislikes": 0
+    },
+    {
+      "id": "C003",
+      "titulo": "Viva La Vida",
+      "artista": "Coldplay",
+      "genero": "Alternativo",
+      "duracion": "04:03",
+      "reproducciones": 12,
+      "likes": 8,
+      "dislikes": 2
+    }
+  ],
+  "playlists": {
+    "Favoritas": ["C001", "C002"]
+  },
+  "usuarios": {
+    "ana": {
+      "historial": [
+        {
+          "id": "C001",
+          "fecha": "2025-06-07 10:00:00"
+        },
+        {
+          "id": "C002",
+          "fecha": "2025-06-07 10:00:00"
+        }
+      ],
+      "playlists": {
+        "Estudio": ["C002"],
+        "Relajación": ["C003"]
+      },
+      "biblioteca": ["C001", "C003"]
+    },
+    "pedro": {
+      "historial": [
+        {
+          "id": "C003",
+          "fecha": "2025-06-07 10:00:00"
+        }
+      ],
+      "playlists": {
+        "Mis Favoritas": ["C001"]
+      },
+      "biblioteca": ["C001"]
+    }
+  }
+}
