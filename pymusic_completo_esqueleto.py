@@ -24,7 +24,7 @@ def agregar_cancion(catalogo, generos_set):
     #       likes: 0, dislikes: 0, reproducciones: 0
     # TODO: Agregar canción al catálogo
     # TODO: Agregar el género al set generos_set
-
+#comentario
 #  Buscar canciones por título o artista
 def buscar_cancion(catalogo):
     print("🔧 Aquí se buscarían canciones por título o artista.")
