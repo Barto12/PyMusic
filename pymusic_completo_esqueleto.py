@@ -17,9 +17,26 @@ def guardar_datos(datos):
         json.dump(datos, f, indent=4)
 
 #  Agregar una canción al catálogo
-def agregar_cancion(catalogo, generos_set):
-    print("🔧 Aquí se agregaría una nueva canción al catálogo.")
-    # TODO: Pedir título, artista, género, duración
+ print("🔧 Agregar nueva canción al catálogo")
+
+    titulo = input("🎵 Título de la canción: ").strip()
+    artista = input("🎤 Artista: ").strip()
+    genero = input("🎶 Género: ").strip()
+    duracion = input("⏱️ Duración (mm:ss): ").strip()
+
+    # Crear diccionario de la canción
+    cancion = {
+        "titulo": titulo,
+        "artista": artista,
+        "genero": genero,
+        "duracion": duracion
+    }
+
+    # Agregar al catálogo y al set de géneros
+    catalogo.append(cancion)
+    generos_set.add(genero)
+
+    print(f" Canción '{titulo}' de {artista} agregada exitosamente.\n")
     # TODO: Crear un diccionario que contenga además de los datos anteriores:
     #       likes: 0, dislikes: 0, reproducciones: 0
     # TODO: Agregar canción al catálogo
